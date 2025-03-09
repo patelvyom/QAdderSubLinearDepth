@@ -1,7 +1,7 @@
 from qiskit.circuit import Gate
 from qiskit import QuantumCircuit, QuantumRegister
 from typing import List, Tuple
-
+from math import ceil
 
 def get_linear_depth_ladder_ops(qreg: List[int]) -> Tuple[QuantumCircuit, List[int]]:
     """
