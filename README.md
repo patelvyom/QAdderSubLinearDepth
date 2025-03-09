@@ -28,8 +28,10 @@ pip install -r requirements.txt
 
 ## Usage
 ```python
-from adder import AncillaFreeAdder
-
+from adder import AdderSublinearDepth
+n = 5
+adder_gate = AdderSublinearDepth(n)
+adder_gate.definition.draw()
 ```
 
 ## References
