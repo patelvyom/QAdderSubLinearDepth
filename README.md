@@ -1,3 +1,15 @@
+> **ℹ️ Note:** This implementation has been **officially [merged](https://github.com/Qiskit/qiskit/pull/13975) into [Qiskit](https://github.com/Qiskit/qiskit)**.
+>
+> **Quick usage:**
+```python
+from qiskit import QuantumCircuit, transpile
+from qiskit.circuit.library import HalfAdderGate
+
+qc = QuantumCircuit(7)
+qc.append(HalfAdderGate(3), list(range(7)))
+transpile(qc, basis_gates=['u', 'cx']).count_ops()["cx"]
+```
+
 # Ancilla-Free Quantum Adder with Sublinear Depth
 
 ## Overview
